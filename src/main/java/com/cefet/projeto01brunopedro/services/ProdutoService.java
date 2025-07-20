@@ -32,6 +32,11 @@ public class ProdutoService {
         return new ProdutoDTO(produto);
     }
 
+    public List<ProdutoDTO> findByCategoriaId(Long idCategoria) {
+        List<Produto> produtos = produtoRepository.findByCategoriaId(idCategoria);
+        return produtos.stream().map(ProdutoDTO::new).toList();
+    }
+
     public ProdutoDTO insert(ProdutoDTO dto) {
         Categoria categoria = categoriaRepository.findById(dto.getIdCategoria())
                 .orElseThrow(() -> new EntityNotFoundException("Categoria não encontrada com ID: " + dto.getIdCategoria()));

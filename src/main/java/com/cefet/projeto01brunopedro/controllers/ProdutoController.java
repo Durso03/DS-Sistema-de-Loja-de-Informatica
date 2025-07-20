@@ -26,6 +26,11 @@ public class ProdutoController {
         return ResponseEntity.ok(produtoService.findById(id));
     }
 
+    @GetMapping("/categoria/{id}")
+    public ResponseEntity<List<ProdutoDTO>> findByCategoriaId(@PathVariable Long id) {
+        return ResponseEntity.ok(produtoService.findByCategoriaId(id));
+    }
+
     @PostMapping
     public ResponseEntity<ProdutoDTO> create(@RequestBody ProdutoDTO dto) {
         ProdutoDTO novo = produtoService.insert(dto);

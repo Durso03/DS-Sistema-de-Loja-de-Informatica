@@ -20,6 +20,10 @@ public class Usuario {
 
     @Column(nullable = false)
     private String tipo;
+    
+//    @Enumerated(EnumType.STRING)
+//    @Column(name = "tipo", nullable = false)
+//    private NivelAcesso tipo;
 
     @ManyToOne(optional = false)
     @JoinColumn(name = "id_pessoa")

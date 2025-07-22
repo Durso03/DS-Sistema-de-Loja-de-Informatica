@@ -1,17 +1,29 @@
 package com.cefet.projeto01brunopedro.dto;
 
 import com.cefet.projeto01brunopedro.entities.Venda;
-
+import io.swagger.v3.oas.annotations.media.Schema;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
+@Schema(name = "VendaDTO", description = "DTO para representação de transações de venda")
 public class VendaDTO {
 
+    @Schema(description = "ID único da venda", example = "1")
     private Long id;
+
+    @Schema(description = "Data da transação", example = "2023-05-15")
     private LocalDate data;
+
+    @Schema(description = "Valor total da venda", example = "1599.99")
     private BigDecimal valor;
+
+    @Schema(description = "Observações adicionais", example = "Embalar para presente")
     private String observacao;
+
+    @Schema(description = "ID do cliente associado", example = "10")
     private Long idPessoaCliente;
+
+    @Schema(description = "ID do funcionário responsável", example = "5")
     private Long idPessoaFuncionario;
 
     public VendaDTO() {
@@ -26,6 +38,7 @@ public class VendaDTO {
         this.idPessoaFuncionario = venda.getFuncionario().getId();
     }
 
+    // Getters and Setters
     public Long getId() {
         return id;
     }

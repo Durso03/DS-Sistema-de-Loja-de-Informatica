@@ -26,7 +26,7 @@ public class Usuario {
 //    private NivelAcesso tipo;
 
     @ManyToOne(optional = false)
-    @JoinColumn(name = "id_pessoa")
+    @JoinColumn(name = "id_pessoa", unique = true)
     private Pessoa pessoa;
 
     public Usuario() {

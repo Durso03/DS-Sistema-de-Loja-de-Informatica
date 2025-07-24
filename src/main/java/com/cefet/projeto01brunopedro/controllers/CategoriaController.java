@@ -12,6 +12,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/categorias")
 @Tag(name = "Categoria Controller", description = "Endpoints para gerenciamento de categorias")

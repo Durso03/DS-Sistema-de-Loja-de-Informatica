@@ -13,6 +13,8 @@ import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.Parameter;
 
+
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/produtos")
 @Tag(name = "Produto Controller", description = "Endpoints para gerenciamento de produtos")

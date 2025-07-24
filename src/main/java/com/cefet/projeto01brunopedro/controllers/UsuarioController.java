@@ -9,6 +9,7 @@ import com.cefet.projeto01brunopedro.services.UsuarioService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/usuarios")
 @Tag(name = "Usuários", description = "Operações com usuários")

@@ -1,8 +1,12 @@
 INSERT INTO tb_pessoa (nome, cpf, endereco, telefone, email) VALUES ('Pedro Henrique', '12345678901', 'Rua Linux, Centro, Ipatinga', '11999999999', 'pedro@email.com');
 INSERT INTO tb_pessoa (nome, cpf, endereco, telefone, email) VALUES ('Odilon Correa', '98765432100', 'Rua Cefet, Centro, Timóteo', '11888888888', 'odilon@email.com');
+INSERT INTO tb_pessoa (nome, cpf, endereco, telefone, email) VALUES ('Bruno Durso', '12345678922', 'Rua Tal, Bromelias, Timoteo', '11888888889', 'bruno@email.com');
+INSERT INTO tb_pessoa (nome, cpf, endereco, telefone, email) VALUES ('Jose da Silva', '12345678300', 'Rua X, Centro, Fabriciano', '11888888300', 'jose@email.com');
 
 INSERT INTO tb_usuario (login, senha, tipo, id_pessoa) VALUES ('pedrohenrique', '123456', 'VENDEDOR', 1);
 INSERT INTO tb_usuario (login, senha, tipo, id_pessoa) VALUES ('odiloncorrea', 'abcdef', 'CLIENTE', 2);
+INSERT INTO tb_usuario (login, senha, tipo, id_pessoa) VALUES ('brunodurso', 'defabc', 'VENDEDOR', 3);
+INSERT INTO tb_usuario (login, senha, tipo, id_pessoa) VALUES ('josedasilva', 'whatsapp', 'CLIENTE', 4);
 
 INSERT INTO tb_categoria (descricao) VALUES ('Teclados');
 INSERT INTO tb_categoria (descricao) VALUES ('Mouses');

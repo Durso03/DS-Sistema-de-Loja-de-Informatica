@@ -14,7 +14,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.Parameter;
 
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://quine-mccluskey-informatica.netlify.app")
 @RestController
 @RequestMapping("/produtos")
 @Tag(name = "Produto Controller", description = "Endpoints para gerenciamento de produtos")

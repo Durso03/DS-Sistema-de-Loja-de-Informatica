@@ -9,7 +9,7 @@ import com.cefet.projeto01brunopedro.services.VendaService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://quine-mccluskey-informatica.netlify.app")
 @RestController
 @RequestMapping("/vendas")
 @Tag(name = "Vendas", description = "Operações com vendas")
